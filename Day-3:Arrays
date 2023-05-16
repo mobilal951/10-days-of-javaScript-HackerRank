@@ -30,9 +30,9 @@ function readLine() {
 function getSecondLargest(nums) {
     // Complete the function
     const set_nums = new Set(nums);
-    nums = Array.from(set_nums);
-    nums.sort();
-    return nums[nums.length-2];
+  nums = Array.from(set_nums);
+  nums.sort((a, b) => a-b);// sorts a numerical array in ascending
+  return nums[nums.length-2];
 }
 
 
